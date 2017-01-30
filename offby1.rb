@@ -17,4 +17,17 @@ def off(win_num, my_num)
 
 end
 
+def returning_function(my_num, win_nums)
+	array = []
+
+	win_nums.each do |win_num|
+
+		if off(win_num, my_num) 
+			array << win_num
+		end
+
+	end
+	array
+end
+
 
