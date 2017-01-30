@@ -9,11 +9,7 @@ def off(win_num, my_num)
 		index_position += 1 
 	end
 
-	if my_num.length - matches == 1
-		true
-	else
-		false
-	end
+	my_num.length - matches == 1
 
 end
 
