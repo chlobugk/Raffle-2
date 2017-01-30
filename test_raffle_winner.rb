@@ -19,4 +19,17 @@ class TestRaffle < MiniTest::Test
 		assert_equal(true, raffle_function(ticket_num, winning_num_array))
 	end
 
+	def test_multiple_returns_false
+		ticket_num = '5678'
+		winning_num_array = ['1234', '4321', '5555']
+		assert_equal(false, raffle_function(ticket_num, winning_num_array))
+	end
+
+	def test_multiple_returns_true
+		ticket_num = '5555'
+		winning_num_array = ['1234', '5555', '5678']
+		assert_equal(true, raffle_function(ticket_num, winning_num_array))
+	end
+
+
 end
